@@ -1,0 +1,29 @@
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well form-horizontal"}) do |f| %>
+  <legend style='align: center;'>Sign in</legend>
+  <div class="control-group">
+    <%= f.label :email, class: "control-label" %>
+    <div class="controls">
+      <%= f.email_field :email %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :password, class: "control-label" %>
+    <div class="controls">
+      <%= f.password_field :password %>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+    <button type="submit" class="btn btn-primary formSubmit pull-left">Sign in</button>
+    <label class="checkbox pull-left" style="width: 150px;margin-left: 30px;">
+      <%= f.check_box :remember_me %>
+      Stay signed in
+    </label>
+    </div>
+  </div>
+  <div class="form-actions">
+    <%= render "devise/shared/links" %>
+  </div>
+<% end %>
+
