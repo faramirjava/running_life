@@ -1,0 +1,51 @@
+<%= form_for :race_detail,url: race_details_path(@race_detail),html: { class: "well form-horizontal"} do |f|%>
+	<legend style='align: center;'>Create Race Event</legend>
+	<%=f.hidden_field :admin_id, value:current_admin.id %>
+	<div class="control-group">
+	    <%= f.label :event_name, class: "control-label" %>
+	    <div class="controls">
+	      <%= f.text_field :event_name %>
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <%= f.label :event_date, class: "control-label" %>
+	    <div class="controls">
+	      <%= f.text_field :event_date %>
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <%= f.label :event_state, class: "control-label" %>
+	    <div class="controls">
+	      <%= f.text_field :event_state %>
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <%= f.label :event_city, class: "control-label" %>
+	    <div class="controls">
+	      <%= f.text_field :event_city %>
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <%= f.label :event_date, class: "control-label" %>
+	    <div class="controls">
+	      <%= f.text_field :event_date %>
+	    </div>
+	  </div>
+	 
+	  <div class="checkbox">
+  		<%= f.fields_for :race_type do |n| %>
+	  		<label>
+	    		<%= n.check_box :half_marathon, checked: true , class: "control-label"%>
+	  		</label>
+	  	<%end%>
+	  </div>
+    
+   
+
+	  <div class="control-group">
+	    <div class="controls">
+	    <button type="submit" class="btn btn btn-success formSubmit pull-left">Submit</button>
+	    <%=link_to "back", race_details_path, class:"btn btn-default pull-right"%>
+	    </div>
+	  </div>
+<%end%>

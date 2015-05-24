@@ -4,6 +4,7 @@ SampleApp::Application.routes.draw do
   
   get '/' => 'dashboard#index'
 
+  resources :race_details
   #devise_scope :admins do
     #root to: "devise/sessions#new"
   #end

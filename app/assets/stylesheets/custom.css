@@ -1,0 +1,115 @@
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-inner {
+    border-radius: 0;
+}
+.bannerImg {
+    background: #ccc;
+    position: relative;
+    margin-bottom: 20px
+}
+.btnWrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background: rgba(0,0,0,0.5)
+}
+.btnWrap .btn {
+    margin-top: 65px
+}
+.bannerImg:hover .btnWrap {
+    display: block;
+}
+.innerWrap {
+    box-shadow: 0 0 0 1px #ccc;
+}
+.boxHead {
+    position: relative;
+}
+.boxHead h4 {
+    /*padding-right: 70px;*/
+    padding-left: 10px;
+
+}
+/*.dateBox {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    padding: 10px;
+    background: #ccc;
+    font-size: 12px;
+    line-height: 16px
+}
+.dateBox span {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+}*/
+.boxFooter,
+.infoLabel {
+    padding-left: 10px
+}
+.infoLabel{
+    font-size: 12px
+}
+.infoText {
+    padding-right: 10px;
+    padding-left: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.dateTimeInfo  {
+    background: rgba(0,0,0,0.3);
+    color: #e36b23;
+    padding: 3px 0;
+}
+.boxFooter {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.tagsOuter {
+    padding-top: 10px;
+}
+.sectionDivider {
+    background: #e36b23;
+}
+.sectionDivider {
+    margin-bottom: 20px
+}
+.sectionDivider h2 {
+    margin: 0;
+    padding: 10px 0;
+    color: #fff
+}
+.innerWrap {
+    margin-bottom: 20px;
+    min-height: 397px;
+}
+.sliderSection {
+    padding: 20px
+}
+.topSlider .span3 {
+    float: none;
+}
+.slidePager {
+    padding: 20px 0 0 0
+}
+.slidePager span {
+    padding: 3px;
+    background: #ccc;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    color: transparent;
+    cursor: pointer;
+    margin: 0 2px;
+}
+.slidePager span:hover {
+    background: #000;
+}

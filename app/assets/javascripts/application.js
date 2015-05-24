@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require jquery.cycle2
+//= require jquery.cycle2.carousel
 //= require_tree .
